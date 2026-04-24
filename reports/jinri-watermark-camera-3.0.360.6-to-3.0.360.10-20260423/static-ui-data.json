@@ -1,0 +1,68 @@
+{
+  "note": "静态 UI 还原来自 APK 资源、DEX 字符串和 apktool layout diff，不代表真实运行截图。",
+  "counts": {
+    "addedImages": 0,
+    "removedImages": 1,
+    "changedImages": 1
+  },
+  "uiPages": [
+    {
+      "id": "workgroup-desktop-widget",
+      "title": "工作组桌面组件",
+      "type": "UI 改版",
+      "confidence": "中",
+      "pages": [
+        "工作组桌面组件",
+        "团队同步入口"
+      ],
+      "uiKeys": [
+        "workgroup_desktop_widget_dark_bg",
+        "workgroup_desktop_widget_light_bg_end",
+        "workgroup_desktop_widget_link_text",
+        "workgroup_desktop_widget_primary_text",
+        "workgroup_desktop_widget_subtitle_text",
+        "color/workgroup_desktop_widget_dark_bg",
+        "color/workgroup_desktop_widget_light_bg_end",
+        "color/workgroup_desktop_widget_link_text",
+        "color/workgroup_desktop_widget_primary_text",
+        "color/workgroup_desktop_widget_subtitle_text",
+        "res/drawable-night/bg_group_desktop_widget_card.xml",
+        "res/drawable-night/bg_group_desktop_widget_card_colorful.xml",
+        "res/drawable/bg_group_desktop_widget_card_colorful.xml"
+      ],
+      "apiEvidence": [
+        "/xhey/xcamera/ui/setting/PreviewSettingDrawerCoordinator$obtainDrawer$2;",
+        "/xhey/xcamera/ui/setting/PreviewSettingDrawerCoordinator$obtainDrawer$drawer$1;",
+        "sources.com.xhey.xcamera.businessmodule.desktopwidget.WorkGroupDesktopWidget"
+      ],
+      "interpretation": [
+        "新增 5 个 `workgroup_desktop_widget_*` 色值/资源 key，集中在桌面组件背景和文案颜色。",
+        "`layout_group_desktop_widget` 与 `layout-v22/layout_group_desktop_widget` 均发生属性级变化，关联类映射到 `WorkGroupDesktopWidget`。",
+        "旧版 `bg_group_desktop_widget_card_colorful.png` 被移除，新版改为 drawable XML；另有 widget preview 图片变化。",
+        "建议在真机桌面添加工作组组件，分别验证浅色/深色模式、团队同步开启态和点击跳转链路。"
+      ],
+      "assetsHint": [
+        "layout_group_desktop_widget",
+        "work_group_desktop_widget_info",
+        "bg_group_desktop_widget_card_colorful"
+      ]
+    }
+  ],
+  "assets": {
+    "addedImages": [],
+    "removedImages": [
+      {
+        "apkPath": "res/U_j.png",
+        "url": "old/old__res__U_j.png",
+        "size": 4018
+      }
+    ],
+    "changedNewImages": [
+      {
+        "apkPath": "res/6sb.png",
+        "url": "new/new__res__6sb.png",
+        "size": 18777
+      }
+    ]
+  }
+}

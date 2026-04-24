@@ -1,0 +1,89 @@
+{
+  "created_at": "2026-04-23T18:11:59",
+  "app": "今日水印相机",
+  "package": "com.xhey.xcamera",
+  "old_version": "v3.0.360.6",
+  "new_version": "v3.0.360.10",
+  "entrypoint": "index.html",
+  "summary": {
+    "features": 1,
+    "uiChanges": 2,
+    "infraChanges": 3,
+    "resourceStringsAdded": 78,
+    "eventsAdded": 5,
+    "apisAdded": 2,
+    "imagesAdded": 0,
+    "imagesRemoved": 1,
+    "apkOldSize": "197.35MB",
+    "apkNewSize": "197.36MB"
+  },
+  "layout_summary": {
+    "layoutsAdded": 0,
+    "layoutsRemoved": 0,
+    "layoutsChanged": 2,
+    "resourceValuesAdded": 5,
+    "resourceValuesRemoved": 0,
+    "resourceValuesChanged": 38,
+    "resourceFilesAdded": 3,
+    "resourceFilesRemoved": 1,
+    "resourceFilesChanged": 4,
+    "categories": {
+      "工作组/桌面组件": 2
+    },
+    "mappingOldStatus": "ok",
+    "mappingNewStatus": "ok",
+    "mappingNewClasses": 2571,
+    "mappingNewLayoutLinks": 2100
+  },
+  "preview_count": 1,
+  "files": [
+    {
+      "path": "ARCHIVE_README.md",
+      "size": 2770
+    },
+    {
+      "path": "app.js",
+      "size": 21932
+    },
+    {
+      "path": "index.html",
+      "size": 7383
+    },
+    {
+      "path": "report-data.json",
+      "size": 10851
+    },
+    {
+      "path": "static-ui/new/new__res__6sb.png",
+      "size": 18777
+    },
+    {
+      "path": "static-ui/old/old__res__U_j.png",
+      "size": 4018
+    },
+    {
+      "path": "static-ui-data.json",
+      "size": 2565
+    },
+    {
+      "path": "static-ui-previews/layout_layout_group_desktop_widget.svg",
+      "size": 2564
+    },
+    {
+      "path": "static-ui-previews/layout_layout_group_desktop_widget_old.svg",
+      "size": 2564
+    },
+    {
+      "path": "styles.css",
+      "size": 18206
+    },
+    {
+      "path": "ui-layout-data.json",
+      "size": 12316
+    },
+    {
+      "path": "ui-preview-data.json",
+      "size": 1175
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "note": "这些图片是基于 apktool layout XML、strings、colors、drawable 引用生成的静态近似还原，不是真机运行截图。",
+  "source": "reports/jinri-watermark-camera-3.0.360.6-to-3.0.360.10-20260423/ui-layout-data.json",
+  "apktoolDir": "artifacts/apk-monitor/decompiled/3.0.360.10/apktool",
+  "previews": [
+    {
+      "layout": "layout/layout_group_desktop_widget",
+      "category": "工作组/桌面组件",
+      "title": "Layout group desktop widget",
+      "classes": [
+        "sources.com.xhey.xcamera.businessmodule.desktopwidget.WorkGroupDesktopWidget"
+      ],
+      "svg": "static-ui-previews/layout_layout_group_desktop_widget.svg",
+      "sourceXml": "artifacts/apk-monitor/decompiled/3.0.360.10/apktool/res/layout/layout_group_desktop_widget.xml",
+      "renderMode": "static-approximation",
+      "changeKind": "changed",
+      "itemLayouts": [],
+      "states": [
+        "默认态"
+      ],
+      "changeSummary": [
+        "新增控件 0",
+        "删除控件 0",
+        "属性/文案变化 5"
+      ],
+      "confidence": "中",
+      "oldSvg": "static-ui-previews/layout_layout_group_desktop_widget_old.svg"
+    }
+  ]
+}

@@ -1,0 +1,2748 @@
+{
+  "title": "今日水印相机 Web 管理后台监控",
+  "target": "今日水印相机管理后台",
+  "generatedAt": "2026-04-24T03:04:06.286Z",
+  "mode": "diff",
+  "pmSummary": "未发现相对上一基线的页面结构变化，登录态和主要入口均保持稳定。",
+  "routeCount": 30,
+  "statusCounts": {
+    "ok": 30
+  },
+  "rawEvidence": {
+    "requestCount": 2430,
+    "textLength": 25779,
+    "snapshotSummary": "/Users/dong/Documents/Cursor/竞品分析工具/artifacts/web-monitor/snapshots/probe-admin/probe-summary.json"
+  },
+  "unexplainedChangePool": [],
+  "routes": [
+    {
+      "route": "orders",
+      "name": "我的订单/会员开票",
+      "status": "ok",
+      "title": "今日水印相机",
+      "currentUrl": "https://www.5181688.com/orders",
+      "textLength": 348,
+      "requestCount": 69,
+      "normalizedTextHash": "6349b19072757fed",
+      "expectedSignalCount": 10,
+      "missingExpectedSignals": [
+        {
+          "group": "tableColumns",
+          "label": "购买金额"
+        },
+        {
+          "group": "tableColumns",
+          "label": "购买时间"
+        }
+      ],
+      "presence": {
+        "tabs": [
+          {
+            "label": "未开票",
+            "present": true
+          },
+          {
+            "label": "已开票",
+            "present": true
+          }
+        ],
+        "tableColumns": [
+          {
+            "label": "序号",
+            "present": true
+          },
+          {
+            "label": "商品类型",
+            "present": true
+          },
+          {
+            "label": "团队号",
+            "present": true
+          },
+          {
+            "label": "购买金额",
+            "present": false
+          },
+          {
+            "label": "订单号",
+            "present": true
+          },
+          {
+            "label": "购买时间",
+            "present": false
+          },
+          {
+            "label": "操作",
+            "present": true
+          }
+        ],
+        "rowActions": [
+          {
+            "label": "开票",
+            "present": true
+          }
+        ]
+      },
+      "changes": [],
+      "maxSeverity": "info"
+    },
+    {
+      "route": "data-statistics",
+      "name": "数据统计",
+      "status": "ok",
+      "title": "今日水印相机",
+      "currentUrl": "https://www.5181688.com/data/statistics",
+      "textLength": 348,
+      "requestCount": 77,
+      "normalizedTextHash": "8ff43d1749cb5499",
+      "expectedSignalCount": 16,
+      "missingExpectedSignals": [
+        {
+          "group": "filters",
+          "label": "开始日期"
+        },
+        {
+          "group": "filters",
+          "label": "结束日期"
+        },
+        {
+          "group": "metrics",
+          "label": "照片数量"
+        },
+        {
+          "group": "metrics",
+          "label": "拍摄数量"
+        },
+        {
+          "group": "highValueSignals",
+          "label": "水印名称"
+        }
+      ],
+      "presence": {
+        "stableControls": [
+          {
+            "label": "自定义看板",
+            "present": true
+          }
+        ],
+        "sections": [
+          {
+            "label": "照片统计",
+            "present": true
+          },
+          {
+            "label": "人员统计",
+            "present": true
+          },
+          {
+            "label": "水印统计",
+            "present": true
+          }
+        ],
+        "filters": [
+          {
+            "label": "开始日期",
+            "present": false
+          },
+          {
+            "label": "结束日期",
+            "present": false
+          },
+          {
+            "label": "全部水印类型",
+            "present": true
+          },
+          {
+            "label": "全部成员",
+            "present": true
+          }
+        ],
+        "metrics": [
+          {
+            "label": "拍照人数",
+            "present": true
+          },
+          {
+            "label": "未拍照人数",
+            "present": true
+          },
+          {
+            "label": "照片数量",
+            "present": false
+          },
+          {
+            "label": "拍摄数量",
+            "present": false
+          }
+        ],
+        "highValueSignals": [
+          {
+            "label": "自定义看板",
+            "present": true
+          },
+          {
+            "label": "水印名称",
+            "present": false
+          },
+          {
+            "label": "人员统计",
+            "present": true
+          },
+          {
+            "label": "水印统计",
+            "present": true
+          }
+        ]
+      },
+      "changes": [],
+      "maxSeverity": "info"
+    },
+    {
+      "route": "photo-all",
+      "name": "全部照片",
+      "status": "ok",
+      "title": "今日水印相机",
+      "currentUrl": "https://www.5181688.com/photo/all",
+      "textLength": 2724,
+      "requestCount": 146,
+      "normalizedTextHash": "00f25e69066bc197",
+      "expectedSignalCount": 23,
+      "missingExpectedSignals": [
+        {
+          "group": "filters",
+          "label": "今天"
+        },
+        {
+          "group": "highValueSignals",
+          "label": "AI验真"
+        }
+      ],
+      "presence": {
+        "stableControls": [
+          {
+            "label": "搜索",
+            "present": true
+          },
+          {
+            "label": "重置",
+            "present": true
+          },
+          {
+            "label": "下载",
+            "present": true
+          },
+          {
+            "label": "导出Excel",
+            "present": true
+          },
+          {
+            "label": "文件夹",
+            "present": true
+          },
+          {
+            "label": "批量编辑水印",
+            "present": true
+          },
+          {
+            "label": "去水印",
+            "present": true
+          },
+          {
+            "label": "下载记录",
+            "present": true
+          }
+        ],
+        "filters": [
+          {
+            "label": "过去6个月",
+            "present": true
+          },
+          {
+            "label": "筛选人员",
+            "present": true
+          },
+          {
+            "label": "筛选水印",
+            "present": true
+          },
+          {
+            "label": "更多筛选",
+            "present": true
+          },
+          {
+            "label": "今天",
+            "present": false
+          },
+          {
+            "label": "昨天",
+            "present": true
+          },
+          {
+            "label": "过去30天",
+            "present": true
+          },
+          {
+            "label": "本月",
+            "present": true
+          },
+          {
+            "label": "按人员",
+            "present": true
+          }
+        ],
+        "highValueSignals": [
+          {
+            "label": "上传照片/视频",
+            "present": true
+          },
+          {
+            "label": "导出Excel",
+            "present": true
+          },
+          {
+            "label": "批量编辑水印",
+            "present": true
+          },
+          {
+            "label": "去水印",
+            "present": true
+          },
+          {
+            "label": "下载记录",
+            "present": true
+          },
+          {
+            "label": "AI验真",
+            "present": false
+          }
+        ]
+      },
+      "changes": [],
+      "maxSeverity": "info"
+    },
+    {
+      "route": "photo-ledger",
+      "name": "照片台账表",
+      "status": "ok",
+      "title": "今日水印相机",
+      "currentUrl": "https://www.5181688.com/watermark/data",
+      "textLength": 402,
+      "requestCount": 74,
+      "normalizedTextHash": "6ebba7ddaf1bceda",
+      "expectedSignalCount": 20,
+      "missingExpectedSignals": [
+        {
+          "group": "stableControls",
+          "label": "重置"
+        },
+        {
+          "group": "filters",
+          "label": "筛选时间"
+        }
+      ],
+      "presence": {
+        "stableControls": [
+          {
+            "label": "导出表格",
+            "present": true
+          },
+          {
+            "label": "开始筛选",
+            "present": true
+          },
+          {
+            "label": "重置",
+            "present": false
+          },
+          {
+            "label": "AI提取",
+            "present": true
+          },
+          {
+            "label": "下载记录",
+            "present": true
+          },
+          {
+            "label": "列显示设置",
+            "present": true
+          }
+        ],
+        "filters": [
+          {
+            "label": "筛选内容",
+            "present": true
+          },
+          {
+            "label": "内容类型",
+            "present": true
+          },
+          {
+            "label": "筛选评论",
+            "present": true
+          },
+          {
+            "label": "筛选时间",
+            "present": false
+          },
+          {
+            "label": "筛选成员",
+            "present": true
+          },
+          {
+            "label": "筛选水印",
+            "present": true
+          },
+          {
+            "label": "筛选标签",
+            "present": true
+          }
+        ],
+        "tableColumns": [
+          {
+            "label": "照片/视频",
+            "present": true
+          },
+          {
+            "label": "海拔",
+            "present": true
+          }
+        ],
+        "highValueSignals": [
+          {
+            "label": "AI提取",
+            "present": true
+          },
+          {
+            "label": "列显示设置",
+            "present": true
+          },
+          {
+            "label": "照片标签",
+            "present": true
+          },
+          {
+            "label": "导出表格",
+            "present": true
+          },
+          {
+            "label": "下载记录",
+            "present": true
+          }
+        ]
+      },
+      "changes": [],
+      "maxSeverity": "info"
+    },
+    {
+      "route": "photo-folders",
+      "name": "分类文件夹",
+      "status": "ok",
+      "title": "今日水印相机",
+      "currentUrl": "https://www.5181688.com/photo/folders",
+      "textLength": 709,
+      "requestCount": 75,
+      "normalizedTextHash": "efca2b748e019b99",
+      "expectedSignalCount": 12,
+      "missingExpectedSignals": [
+        {
+          "group": "highValueSignals",
+          "label": "多人共享，团队成员快速协作"
+        },
+        {
+          "group": "highValueSignals",
+          "label": "照片自动分类，快速查找"
+        }
+      ],
+      "presence": {
+        "stableControls": [
+          {
+            "label": "新建文件夹",
+            "present": true
+          },
+          {
+            "label": "下载记录",
+            "present": true
+          }
+        ],
+        "tableColumns": [
+          {
+            "label": "名称",
+            "present": true
+          },
+          {
+            "label": "照片数/文件夹",
+            "present": true
+          },
+          {
+            "label": "更新日期",
+            "present": true
+          },
+          {
+            "label": "操作",
+            "present": true
+          }
+        ],
+        "rowActions": [
+          {
+            "label": "下载",
+            "present": true
+          },
+          {
+            "label": "重命名",
+            "present": true
+          },
+          {
+            "label": "删除",
+            "present": true
+          }
+        ],
+        "highValueSignals": [
+          {
+            "label": "云端共享，智能分类",
+            "present": true
+          },
+          {
+            "label": "多人共享，团队成员快速协作",
+            "present": false
+          },
+          {
+            "label": "照片自动分类，快速查找",
+            "present": false
+          }
+        ]
+      },
+      "changes": [],
+      "maxSeverity": "info"
+    },
+    {
+      "route": "photo-location",
+      "name": "照片地点",
+      "status": "ok",
+      "title": "今日水印相机",
+      "currentUrl": "https://www.5181688.com/photo/location",
+      "textLength": 346,
+      "requestCount": 136,
+      "normalizedTextHash": "8d64fc0b1c1d0d87",
+      "expectedSignalCount": 11,
+      "missingExpectedSignals": [
+        {
+          "group": "stableControls",
+          "label": "查看人员实时定位"
+        },
+        {
+          "group": "filters",
+          "label": "筛选时间"
+        },
+        {
+          "group": "highValueSignals",
+          "label": "地图聚合点"
+        },
+        {
+          "group": "highValueSignals",
+          "label": "地点统计面板"
+        },
+        {
+          "group": "highValueSignals",
+          "label": "人员实时定位入口"
+        }
+      ],
+      "presence": {
+        "stableControls": [
+          {
+            "label": "查看人员实时定位",
+            "present": false
+          },
+          {
+            "label": "联系客服",
+            "present": true
+          }
+        ],
+        "filters": [
+          {
+            "label": "城市",
+            "present": true
+          },
+          {
+            "label": "筛选成员",
+            "present": true
+          },
+          {
+            "label": "筛选时间",
+            "present": false
+          }
+        ],
+        "metrics": [
+          {
+            "label": "地点总数",
+            "present": true
+          },
+          {
+            "label": "拍照成员",
+            "present": true
+          },
+          {
+            "label": "照片数",
+            "present": true
+          }
+        ],
+        "highValueSignals": [
+          {
+            "label": "地图聚合点",
+            "present": false
+          },
+          {
+            "label": "地点统计面板",
+            "present": false
+          },
+          {
+            "label": "人员实时定位入口",
+            "present": false
+          }
+        ]
+      },
+      "changes": [],
+      "maxSeverity": "info"
+    },
+    {
+      "route": "pathway",
+      "name": "拍照路线",
+      "status": "ok",
+      "title": "今日水印相机",
+      "currentUrl": "https://www.5181688.com/pathway",
+      "textLength": 282,
+      "requestCount": 109,
+      "normalizedTextHash": "e95edf8740281b35",
+      "expectedSignalCount": 11,
+      "missingExpectedSignals": [
+        {
+          "group": "stableControls",
+          "label": "查看"
+        },
+        {
+          "group": "filters",
+          "label": "请选择日期"
+        },
+        {
+          "group": "filters",
+          "label": "请输入姓名搜索"
+        }
+      ],
+      "presence": {
+        "stableControls": [
+          {
+            "label": "当日已拍",
+            "present": true
+          },
+          {
+            "label": "当日未拍",
+            "present": true
+          },
+          {
+            "label": "查看",
+            "present": false
+          }
+        ],
+        "filters": [
+          {
+            "label": "请选择日期",
+            "present": false
+          },
+          {
+            "label": "请输入姓名搜索",
+            "present": false
+          }
+        ],
+        "tableColumns": [
+          {
+            "label": "员工信息",
+            "present": true
+          },
+          {
+            "label": "路线详情",
+            "present": true
+          }
+        ],
+        "highValueSignals": [
+          {
+            "label": "路线详情",
+            "present": true
+          },
+          {
+            "label": "当日已拍",
+            "present": true
+          },
+          {
+            "label": "当日未拍",
+            "present": true
+          },
+          {
+            "label": "人员列表",
+            "present": true
+          }
+        ]
+      },
+      "changes": [],
+      "maxSeverity": "info"
+    },
+    {
+      "route": "ai-duplicate-photo",
+      "name": "AI相似照片去重",
+      "status": "ok",
+      "title": "今日水印相机",
+      "currentUrl": "https://www.5181688.com/ai/duplicate-photo",
+      "textLength": 412,
+      "requestCount": 73,
+      "normalizedTextHash": "4e6263f22d654c72",
+      "expectedSignalCount": 15,
+      "missingExpectedSignals": [
+        {
+          "group": "options",
+          "label": "时间范围"
+        },
+        {
+          "group": "options",
+          "label": "每个相似组的照片数量"
+        },
+        {
+          "group": "options",
+          "label": "每页显示的相似组数量"
+        }
+      ],
+      "presence": {
+        "stableControls": [
+          {
+            "label": "功能演示",
+            "present": true
+          },
+          {
+            "label": "过去30天",
+            "present": true
+          },
+          {
+            "label": "过去3个月",
+            "present": true
+          },
+          {
+            "label": "过去6个月",
+            "present": true
+          },
+          {
+            "label": "过去一年",
+            "present": true
+          },
+          {
+            "label": "开启 AI 深度智能扫描",
+            "present": true
+          }
+        ],
+        "sections": [
+          {
+            "label": "配置扫描参数",
+            "present": true
+          },
+          {
+            "label": "结果预览分页配置",
+            "present": true
+          }
+        ],
+        "options": [
+          {
+            "label": "时间范围",
+            "present": false
+          },
+          {
+            "label": "每个相似组的照片数量",
+            "present": false
+          },
+          {
+            "label": "每页显示的相似组数量",
+            "present": false
+          }
+        ],
+        "highValueSignals": [
+          {
+            "label": "AI 深度智能扫描",
+            "present": true
+          },
+          {
+            "label": "重复照片",
+            "present": true
+          },
+          {
+            "label": "分组决策",
+            "present": true
+          },
+          {
+            "label": "智能分组",
+            "present": true
+          }
+        ]
+      },
+      "changes": [],
+      "maxSeverity": "info"
+    },
+    {
+      "route": "photo-ai",
+      "name": "AI 智能看图",
+      "status": "ok",
+      "title": "今日水印相机",
+      "currentUrl": "https://www.5181688.com/photo/ai",
+      "textLength": 348,
+      "requestCount": 74,
+      "normalizedTextHash": "e61e86e3a619f7a3",
+      "expectedSignalCount": 12,
+      "missingExpectedSignals": [
+        {
+          "group": "stableControls",
+          "label": "重置"
+        },
+        {
+          "group": "filters",
+          "label": "筛选时间"
+        },
+        {
+          "group": "categories",
+          "label": "杂物/二维码"
+        },
+        {
+          "group": "categories",
+          "label": "钢管进出场"
+        }
+      ],
+      "presence": {
+        "stableControls": [
+          {
+            "label": "重置",
+            "present": false
+          }
+        ],
+        "filters": [
+          {
+            "label": "筛选时间",
+            "present": false
+          },
+          {
+            "label": "昨天",
+            "present": true
+          },
+          {
+            "label": "上周",
+            "present": true
+          },
+          {
+            "label": "过去14天",
+            "present": true
+          }
+        ],
+        "categories": [
+          {
+            "label": "杂物/二维码",
+            "present": false
+          },
+          {
+            "label": "人像",
+            "present": true
+          },
+          {
+            "label": "台账",
+            "present": true
+          },
+          {
+            "label": "安全帽",
+            "present": true
+          },
+          {
+            "label": "钢管进出场",
+            "present": false
+          }
+        ],
+        "highValueSignals": [
+          {
+            "label": "AI 智能识别场景",
+            "present": true
+          },
+          {
+            "label": "快速筛选",
+            "present": true
+          }
+        ]
+      },
+      "changes": [],
+      "maxSeverity": "info"
+    },
+    {
+      "route": "ai-security",
+      "name": "AI安全隐患台账表",
+      "status": "ok",
+      "title": "今日水印相机",
+      "currentUrl": "https://www.5181688.com/ai/security",
+      "textLength": 2608,
+      "requestCount": 85,
+      "normalizedTextHash": "7985f9d95e83ec95",
+      "expectedSignalCount": 36,
+      "missingExpectedSignals": [
+        {
+          "group": "stableControls",
+          "label": "重置"
+        },
+        {
+          "group": "stableControls",
+          "label": "上传照片开始识别"
+        },
+        {
+          "group": "tableColumns",
+          "label": "完成时间"
+        },
+        {
+          "group": "highValueSignals",
+          "label": "该列内容支持编辑"
+        },
+        {
+          "group": "highValueSignals",
+          "label": "上传照片开始识别"
+        }
+      ],
+      "presence": {
+        "stableControls": [
+          {
+            "label": "导出表格",
+            "present": true
+          },
+          {
+            "label": "开始筛选",
+            "present": true
+          },
+          {
+            "label": "重置",
+            "present": false
+          },
+          {
+            "label": "收起",
+            "present": true
+          },
+          {
+            "label": "列显示设置",
+            "present": true
+          },
+          {
+            "label": "删除选中",
+            "present": true
+          },
+          {
+            "label": "导出选中",
+            "present": true
+          },
+          {
+            "label": "上传照片开始识别",
+            "present": false
+          }
+        ],
+        "filters": [
+          {
+            "label": "单体名称",
+            "present": true
+          },
+          {
+            "label": "问题类型",
+            "present": true
+          },
+          {
+            "label": "检查日期",
+            "present": true
+          },
+          {
+            "label": "拍摄人员",
+            "present": true
+          },
+          {
+            "label": "隐患关键词",
+            "present": true
+          }
+        ],
+        "tableColumns": [
+          {
+            "label": "隐患照片",
+            "present": true
+          },
+          {
+            "label": "拍摄人",
+            "present": true
+          },
+          {
+            "label": "项目名称",
+            "present": true
+          },
+          {
+            "label": "单体名称",
+            "present": true
+          },
+          {
+            "label": "整改责任人",
+            "present": true
+          },
+          {
+            "label": "存在的隐患",
+            "present": true
+          },
+          {
+            "label": "相关依据",
+            "present": true
+          },
+          {
+            "label": "整改措施",
+            "present": true
+          },
+          {
+            "label": "施工单位",
+            "present": true
+          },
+          {
+            "label": "问题类型",
+            "present": true
+          },
+          {
+            "label": "整改工单编号",
+            "present": true
+          },
+          {
+            "label": "检查日期",
+            "present": true
+          },
+          {
+            "label": "整改期限",
+            "present": true
+          },
+          {
+            "label": "整改前照片",
+            "present": true
+          },
+          {
+            "label": "整改后照片",
+            "present": true
+          },
+          {
+            "label": "完成时间",
+            "present": false
+          },
+          {
+            "label": "备注",
+            "present": true
+          }
+        ],
+        "highValueSignals": [
+          {
+            "label": "VIP会员专享",
+            "present": true
+          },
+          {
+            "label": "AI识别",
+            "present": true
+          },
+          {
+            "label": "该列内容支持编辑",
+            "present": false
+          },
+          {
+            "label": "上传照片开始识别",
+            "present": false
+          },
+          {
+            "label": "删除选中",
+            "present": true
+          },
+          {
+            "label": "导出选中",
+            "present": true
+          }
+        ]
+      },
+      "changes": [],
+      "maxSeverity": "info"
+    },
+    {
+      "route": "watermark-list",
+      "name": "水印管理",
+      "status": "ok",
+      "title": "今日水印相机",
+      "currentUrl": "https://www.5181688.com/watermark/list",
+      "textLength": 567,
+      "requestCount": 78,
+      "normalizedTextHash": "e72af8391570b3e7",
+      "expectedSignalCount": 17,
+      "missingExpectedSignals": [
+        {
+          "group": "stableControls",
+          "label": "水印搜索"
+        },
+        {
+          "group": "tableColumns",
+          "label": "创建时间"
+        }
+      ],
+      "presence": {
+        "stableControls": [
+          {
+            "label": "添加模板",
+            "present": true
+          },
+          {
+            "label": "水印搜索",
+            "present": false
+          }
+        ],
+        "tabs": [
+          {
+            "label": "已发布",
+            "present": true
+          }
+        ],
+        "tableColumns": [
+          {
+            "label": "封面图",
+            "present": true
+          },
+          {
+            "label": "模板名称",
+            "present": true
+          },
+          {
+            "label": "创建时间",
+            "present": false
+          },
+          {
+            "label": "使用范围",
+            "present": true
+          },
+          {
+            "label": "操作",
+            "present": true
+          }
+        ],
+        "rowActions": [
+          {
+            "label": "编辑",
+            "present": true
+          },
+          {
+            "label": "重命名",
+            "present": true
+          },
+          {
+            "label": "复制",
+            "present": true
+          },
+          {
+            "label": "复制ID",
+            "present": true
+          },
+          {
+            "label": "删除",
+            "present": true
+          }
+        ],
+        "highValueSignals": [
+          {
+            "label": "添加模板",
+            "present": true
+          },
+          {
+            "label": "已发布",
+            "present": true
+          },
+          {
+            "label": "使用范围",
+            "present": true
+          },
+          {
+            "label": "复制ID",
+            "present": true
+          }
+        ]
+      },
+      "changes": [],
+      "maxSeverity": "info"
+    },
+    {
+      "route": "verify-auth",
+      "name": "照片验真",
+      "status": "ok",
+      "title": "今日水印相机",
+      "currentUrl": "https://www.5181688.com/verifyAuth/index",
+      "textLength": 351,
+      "requestCount": 75,
+      "normalizedTextHash": "7669f888dbfb66da",
+      "expectedSignalCount": 12,
+      "missingExpectedSignals": [
+        {
+          "group": "sections",
+          "label": "全行业首创 验真平台"
+        },
+        {
+          "group": "uploadConstraints",
+          "label": "单次最多 100 张"
+        },
+        {
+          "group": "highValueSignals",
+          "label": "时间防篡改"
+        }
+      ],
+      "presence": {
+        "stableControls": [
+          {
+            "label": "验真记录",
+            "present": true
+          },
+          {
+            "label": "上传照片",
+            "present": true
+          },
+          {
+            "label": "马上了解",
+            "present": true
+          }
+        ],
+        "sections": [
+          {
+            "label": "全行业首创 验真平台",
+            "present": false
+          },
+          {
+            "label": "照片验真API",
+            "present": true
+          }
+        ],
+        "uploadConstraints": [
+          {
+            "label": "JPG",
+            "present": true
+          },
+          {
+            "label": "PNG",
+            "present": true
+          },
+          {
+            "label": "单张大小不超过 10MB",
+            "present": true
+          },
+          {
+            "label": "单次最多 100 张",
+            "present": false
+          }
+        ],
+        "highValueSignals": [
+          {
+            "label": "批量验真",
+            "present": true
+          },
+          {
+            "label": "时间防篡改",
+            "present": false
+          },
+          {
+            "label": "照片验真API",
+            "present": true
+          }
+        ]
+      },
+      "changes": [],
+      "maxSeverity": "info"
+    },
+    {
+      "route": "work-report",
+      "name": "工作汇报",
+      "status": "ok",
+      "title": "今日水印相机",
+      "currentUrl": "https://www.5181688.com/photo/jigsaw?from=menu",
+      "textLength": 513,
+      "requestCount": 72,
+      "normalizedTextHash": "6e98d4ed3260083d",
+      "expectedSignalCount": 25,
+      "missingExpectedSignals": [],
+      "presence": {
+        "stableControls": [
+          {
+            "label": "保存拼图汇报",
+            "present": true
+          },
+          {
+            "label": "建议反馈",
+            "present": true
+          },
+          {
+            "label": "重新选图",
+            "present": true
+          }
+        ],
+        "options": [
+          {
+            "label": "开启头像",
+            "present": true
+          },
+          {
+            "label": "开启工作进度",
+            "present": true
+          },
+          {
+            "label": "开启表格",
+            "present": true
+          },
+          {
+            "label": "单列",
+            "present": true
+          },
+          {
+            "label": "双列",
+            "present": true
+          },
+          {
+            "label": "三列",
+            "present": true
+          },
+          {
+            "label": "启用历史记录",
+            "present": true
+          }
+        ],
+        "formFields": [
+          {
+            "label": "主题色",
+            "present": true
+          },
+          {
+            "label": "标题",
+            "present": true
+          },
+          {
+            "label": "日期",
+            "present": true
+          },
+          {
+            "label": "汇报人",
+            "present": true
+          },
+          {
+            "label": "联系方式",
+            "present": true
+          },
+          {
+            "label": "部门/公司",
+            "present": true
+          },
+          {
+            "label": "开启AI助写",
+            "present": true
+          },
+          {
+            "label": "工作进度",
+            "present": true
+          },
+          {
+            "label": "表格",
+            "present": true
+          },
+          {
+            "label": "汇报正文",
+            "present": true
+          },
+          {
+            "label": "图片布局",
+            "present": true
+          }
+        ],
+        "highValueSignals": [
+          {
+            "label": "开启AI助写",
+            "present": true
+          },
+          {
+            "label": "工作进度",
+            "present": true
+          },
+          {
+            "label": "图片布局",
+            "present": true
+          },
+          {
+            "label": "添加拼图照片",
+            "present": true
+          }
+        ]
+      },
+      "changes": [],
+      "maxSeverity": "info"
+    },
+    {
+      "route": "rectify-list",
+      "name": "整改记录",
+      "status": "ok",
+      "title": "今日水印相机",
+      "currentUrl": "https://www.5181688.com/rectify/list",
+      "textLength": 630,
+      "requestCount": 77,
+      "normalizedTextHash": "36ac40bb00e65f04",
+      "expectedSignalCount": 25,
+      "missingExpectedSignals": [
+        {
+          "group": "stableControls",
+          "label": "重置"
+        },
+        {
+          "group": "filters",
+          "label": "筛选时间"
+        },
+        {
+          "group": "tableColumns",
+          "label": "发起时间"
+        },
+        {
+          "group": "tableColumns",
+          "label": "任务截止时间"
+        },
+        {
+          "group": "tableColumns",
+          "label": "任务完成时间"
+        }
+      ],
+      "presence": {
+        "stableControls": [
+          {
+            "label": "重置",
+            "present": false
+          },
+          {
+            "label": "筛选",
+            "present": true
+          },
+          {
+            "label": "发起整改",
+            "present": true
+          },
+          {
+            "label": "下载记录",
+            "present": true
+          },
+          {
+            "label": "导出表格",
+            "present": true
+          },
+          {
+            "label": "删除",
+            "present": true
+          }
+        ],
+        "filters": [
+          {
+            "label": "筛选时间",
+            "present": false
+          },
+          {
+            "label": "任务状态",
+            "present": true
+          },
+          {
+            "label": "发起人",
+            "present": true
+          },
+          {
+            "label": "待办人",
+            "present": true
+          },
+          {
+            "label": "任务编号",
+            "present": true
+          }
+        ],
+        "tableColumns": [
+          {
+            "label": "编号",
+            "present": true
+          },
+          {
+            "label": "发起人",
+            "present": true
+          },
+          {
+            "label": "发起时间",
+            "present": false
+          },
+          {
+            "label": "任务描述",
+            "present": true
+          },
+          {
+            "label": "发起照片",
+            "present": true
+          },
+          {
+            "label": "完成照片",
+            "present": true
+          },
+          {
+            "label": "任务状态",
+            "present": true
+          },
+          {
+            "label": "待办人",
+            "present": true
+          },
+          {
+            "label": "完成人",
+            "present": true
+          },
+          {
+            "label": "任务截止时间",
+            "present": false
+          },
+          {
+            "label": "任务完成时间",
+            "present": false
+          },
+          {
+            "label": "操作",
+            "present": true
+          }
+        ],
+        "rowActions": [
+          {
+            "label": "分享",
+            "present": true
+          },
+          {
+            "label": "删除",
+            "present": true
+          }
+        ]
+      },
+      "changes": [],
+      "maxSeverity": "info"
+    },
+    {
+      "route": "ai-algorithm-store",
+      "name": "AI算法商城",
+      "status": "ok",
+      "title": "今日水印相机",
+      "currentUrl": "https://www.5181688.com/photo/audit",
+      "textLength": 224,
+      "requestCount": 69,
+      "normalizedTextHash": "c67bc01e2d7114bf",
+      "expectedSignalCount": 9,
+      "missingExpectedSignals": [
+        {
+          "group": "sections",
+          "label": "建筑施工安全生产"
+        },
+        {
+          "group": "sections",
+          "label": "物业管理 市政环卫"
+        },
+        {
+          "group": "sections",
+          "label": "快消零售 户外广告监测"
+        },
+        {
+          "group": "sections",
+          "label": "设备巡检 环境保护"
+        },
+        {
+          "group": "sections",
+          "label": "更多场景 咨询专家"
+        },
+        {
+          "group": "highValueSignals",
+          "label": "AI视觉算法商城"
+        },
+        {
+          "group": "highValueSignals",
+          "label": "需求填写"
+        },
+        {
+          "group": "highValueSignals",
+          "label": "微信扫码"
+        },
+        {
+          "group": "highValueSignals",
+          "label": "咨询专家"
+        }
+      ],
+      "presence": {
+        "sections": [
+          {
+            "label": "建筑施工安全生产",
+            "present": false
+          },
+          {
+            "label": "物业管理 市政环卫",
+            "present": false
+          },
+          {
+            "label": "快消零售 户外广告监测",
+            "present": false
+          },
+          {
+            "label": "设备巡检 环境保护",
+            "present": false
+          },
+          {
+            "label": "更多场景 咨询专家",
+            "present": false
+          }
+        ],
+        "highValueSignals": [
+          {
+            "label": "AI视觉算法商城",
+            "present": false
+          },
+          {
+            "label": "需求填写",
+            "present": false
+          },
+          {
+            "label": "微信扫码",
+            "present": false
+          },
+          {
+            "label": "咨询专家",
+            "present": false
+          }
+        ]
+      },
+      "changes": [],
+      "maxSeverity": "info"
+    },
+    {
+      "route": "photo-form",
+      "name": "任务表单",
+      "status": "ok",
+      "title": "今日水印表单",
+      "currentUrl": "https://photoform.5181688.com/forms?space=b0d9c6f2-6186-42d5-bfcc-66e1d94900c2",
+      "textLength": 425,
+      "requestCount": 52,
+      "normalizedTextHash": "523ac83c9c5011a1",
+      "expectedSignalCount": 17,
+      "missingExpectedSignals": [
+        {
+          "group": "stableControls",
+          "label": "创建表单"
+        },
+        {
+          "group": "sections",
+          "label": "还没有表单"
+        },
+        {
+          "group": "highValueSignals",
+          "label": "创建表单"
+        }
+      ],
+      "presence": {
+        "stableControls": [
+          {
+            "label": "新建表单",
+            "present": true
+          },
+          {
+            "label": "创建表单",
+            "present": false
+          },
+          {
+            "label": "使用模板",
+            "present": true
+          },
+          {
+            "label": "联系我们",
+            "present": true
+          }
+        ],
+        "tabs": [
+          {
+            "label": "我的表单",
+            "present": true
+          },
+          {
+            "label": "团队表单",
+            "present": true
+          },
+          {
+            "label": "我的任务",
+            "present": true
+          },
+          {
+            "label": "表单模板",
+            "present": true
+          }
+        ],
+        "sections": [
+          {
+            "label": "推荐模板",
+            "present": true
+          },
+          {
+            "label": "还没有表单",
+            "present": false
+          }
+        ],
+        "templateCards": [
+          {
+            "label": "设备巡检与维保",
+            "present": true
+          },
+          {
+            "label": "巡店派单任务",
+            "present": true
+          },
+          {
+            "label": "施工工序表单",
+            "present": true
+          }
+        ],
+        "highValueSignals": [
+          {
+            "label": "任务表单",
+            "present": true
+          },
+          {
+            "label": "普通表单",
+            "present": true
+          },
+          {
+            "label": "创建表单",
+            "present": false
+          },
+          {
+            "label": "表单空间",
+            "present": true
+          }
+        ]
+      },
+      "changes": [],
+      "maxSeverity": "info"
+    },
+    {
+      "route": "member-location",
+      "name": "人员实时定位",
+      "status": "ok",
+      "title": "今日水印相机",
+      "currentUrl": "https://www.5181688.com/member/location",
+      "textLength": 342,
+      "requestCount": 79,
+      "normalizedTextHash": "221205d4ccb96797",
+      "expectedSignalCount": 5,
+      "missingExpectedSignals": [],
+      "presence": {
+        "stableControls": [
+          {
+            "label": "开通超级会员",
+            "present": true
+          },
+          {
+            "label": "联系客服",
+            "present": true
+          }
+        ],
+        "highValueSignals": [
+          {
+            "label": "秒级掌握成员工作时段实时位置",
+            "present": true
+          },
+          {
+            "label": "团队管理",
+            "present": true
+          },
+          {
+            "label": "超级会员",
+            "present": true
+          }
+        ]
+      },
+      "changes": [],
+      "maxSeverity": "info"
+    },
+    {
+      "route": "credit",
+      "name": "工作信用查询",
+      "status": "ok",
+      "title": "今日水印相机",
+      "currentUrl": "https://www.5181688.com/credit",
+      "textLength": 817,
+      "requestCount": 70,
+      "normalizedTextHash": "4fb5f75287a101d5",
+      "expectedSignalCount": 6,
+      "missingExpectedSignals": [
+        {
+          "group": "formFields",
+          "label": "请输入11位手机号"
+        }
+      ],
+      "presence": {
+        "stableControls": [
+          {
+            "label": "查看团队成员",
+            "present": true
+          },
+          {
+            "label": "立即查询",
+            "present": true
+          }
+        ],
+        "sections": [
+          {
+            "label": "信用等级标准",
+            "present": true
+          },
+          {
+            "label": "核心验真技术",
+            "present": true
+          },
+          {
+            "label": "最近查询动态",
+            "present": true
+          }
+        ],
+        "formFields": [
+          {
+            "label": "请输入11位手机号",
+            "present": false
+          }
+        ]
+      },
+      "changes": [],
+      "maxSeverity": "info"
+    },
+    {
+      "route": "team-department",
+      "name": "成员/部门管理",
+      "status": "ok",
+      "title": "今日水印相机",
+      "currentUrl": "https://www.5181688.com/team/department",
+      "textLength": 890,
+      "requestCount": 83,
+      "normalizedTextHash": "ed9a0e21acb9ff3b",
+      "expectedSignalCount": 20,
+      "missingExpectedSignals": [
+        {
+          "group": "tableColumns",
+          "label": "手机号"
+        },
+        {
+          "group": "tableColumns",
+          "label": "上次登录时间"
+        },
+        {
+          "group": "highValueSignals",
+          "label": "部门树"
+        }
+      ],
+      "presence": {
+        "stableControls": [
+          {
+            "label": "添加子部门",
+            "present": true
+          },
+          {
+            "label": "导出名单",
+            "present": true
+          },
+          {
+            "label": "下载记录",
+            "present": true
+          },
+          {
+            "label": "添加成员",
+            "present": true
+          },
+          {
+            "label": "调整部门",
+            "present": true
+          },
+          {
+            "label": "批量删除",
+            "present": true
+          },
+          {
+            "label": "邀请外部成员",
+            "present": true
+          }
+        ],
+        "tableColumns": [
+          {
+            "label": "姓名",
+            "present": true
+          },
+          {
+            "label": "手机号",
+            "present": false
+          },
+          {
+            "label": "部门",
+            "present": true
+          },
+          {
+            "label": "角色",
+            "present": true
+          },
+          {
+            "label": "上次登录时间",
+            "present": false
+          },
+          {
+            "label": "操作",
+            "present": true
+          }
+        ],
+        "rowActions": [
+          {
+            "label": "修改姓名",
+            "present": true
+          },
+          {
+            "label": "删除",
+            "present": true
+          }
+        ],
+        "highValueSignals": [
+          {
+            "label": "邀请外部成员",
+            "present": true
+          },
+          {
+            "label": "调整部门",
+            "present": true
+          },
+          {
+            "label": "批量删除",
+            "present": true
+          },
+          {
+            "label": "角色",
+            "present": true
+          },
+          {
+            "label": "部门树",
+            "present": false
+          }
+        ]
+      },
+      "changes": [],
+      "maxSeverity": "info"
+    },
+    {
+      "route": "team-admin",
+      "name": "管理员设置",
+      "status": "ok",
+      "title": "今日水印相机",
+      "currentUrl": "https://www.5181688.com/team/admin",
+      "textLength": 356,
+      "requestCount": 72,
+      "normalizedTextHash": "459c5b43aa244611",
+      "expectedSignalCount": 7,
+      "missingExpectedSignals": [
+        {
+          "group": "stableControls",
+          "label": "按姓名搜索管理员"
+        }
+      ],
+      "presence": {
+        "stableControls": [
+          {
+            "label": "添加管理员",
+            "present": true
+          },
+          {
+            "label": "按姓名搜索管理员",
+            "present": false
+          }
+        ],
+        "tableColumns": [
+          {
+            "label": "姓名",
+            "present": true
+          },
+          {
+            "label": "手机",
+            "present": true
+          },
+          {
+            "label": "类型",
+            "present": true
+          },
+          {
+            "label": "操作",
+            "present": true
+          }
+        ],
+        "rowActions": [
+          {
+            "label": "撤销管理员",
+            "present": true
+          }
+        ]
+      },
+      "changes": [],
+      "maxSeverity": "info"
+    },
+    {
+      "route": "authority",
+      "name": "权限管理",
+      "status": "ok",
+      "title": "今日水印相机",
+      "currentUrl": "https://www.5181688.com/authority",
+      "textLength": 293,
+      "requestCount": 69,
+      "normalizedTextHash": "c1a72b425d7cdc74",
+      "expectedSignalCount": 10,
+      "missingExpectedSignals": [
+        {
+          "group": "stableControls",
+          "label": "保存"
+        },
+        {
+          "group": "highValueSignals",
+          "label": "权限项新增"
+        },
+        {
+          "group": "highValueSignals",
+          "label": "选项新增"
+        },
+        {
+          "group": "highValueSignals",
+          "label": "高级会员特权"
+        }
+      ],
+      "presence": {
+        "stableControls": [
+          {
+            "label": "保存",
+            "present": false
+          }
+        ],
+        "options": [
+          {
+            "label": "全团队",
+            "present": true
+          },
+          {
+            "label": "所在部门和下级部门",
+            "present": true
+          },
+          {
+            "label": "仅自己",
+            "present": true
+          },
+          {
+            "label": "同步1小时内",
+            "present": true
+          },
+          {
+            "label": "同步24小时内",
+            "present": true
+          },
+          {
+            "label": "随时",
+            "present": true
+          }
+        ],
+        "highValueSignals": [
+          {
+            "label": "权限项新增",
+            "present": false
+          },
+          {
+            "label": "选项新增",
+            "present": false
+          },
+          {
+            "label": "高级会员特权",
+            "present": false
+          }
+        ]
+      },
+      "changes": [],
+      "maxSeverity": "info"
+    },
+    {
+      "route": "team-log",
+      "name": "操作日志",
+      "status": "ok",
+      "title": "今日水印相机",
+      "currentUrl": "https://www.5181688.com/team/log",
+      "textLength": 404,
+      "requestCount": 70,
+      "normalizedTextHash": "455d053370e32f51",
+      "expectedSignalCount": 6,
+      "missingExpectedSignals": [],
+      "presence": {
+        "stableControls": [
+          {
+            "label": "联系客服",
+            "present": true
+          },
+          {
+            "label": "开通高级会员",
+            "present": true
+          }
+        ],
+        "highValueSignals": [
+          {
+            "label": "90天",
+            "present": true
+          },
+          {
+            "label": "新增、修改、删除全轨迹",
+            "present": true
+          },
+          {
+            "label": "操作记录",
+            "present": true
+          },
+          {
+            "label": "高级会员",
+            "present": true
+          }
+        ]
+      },
+      "changes": [],
+      "maxSeverity": "info"
+    },
+    {
+      "route": "attendance-daily",
+      "name": "每日统计",
+      "status": "ok",
+      "title": "今日水印相机",
+      "currentUrl": "https://www.5181688.com/attendance/daily",
+      "textLength": 5204,
+      "requestCount": 69,
+      "normalizedTextHash": "6c9849d3c0b22606",
+      "expectedSignalCount": 17,
+      "missingExpectedSignals": [
+        {
+          "group": "filters",
+          "label": "筛选时间"
+        },
+        {
+          "group": "tableColumns",
+          "label": "总拍照数"
+        },
+        {
+          "group": "tableColumns",
+          "label": "上班打卡时间"
+        },
+        {
+          "group": "tableColumns",
+          "label": "下班打卡时间"
+        }
+      ],
+      "presence": {
+        "stableControls": [
+          {
+            "label": "下载记录",
+            "present": true
+          },
+          {
+            "label": "下载表格Excel",
+            "present": true
+          }
+        ],
+        "filters": [
+          {
+            "label": "筛选时间",
+            "present": false
+          },
+          {
+            "label": "筛选成员",
+            "present": true
+          }
+        ],
+        "tableColumns": [
+          {
+            "label": "姓名",
+            "present": true
+          },
+          {
+            "label": "考勤规则",
+            "present": true
+          },
+          {
+            "label": "班次",
+            "present": true
+          },
+          {
+            "label": "日期",
+            "present": true
+          },
+          {
+            "label": "星期",
+            "present": true
+          },
+          {
+            "label": "总拍照数",
+            "present": false
+          },
+          {
+            "label": "总工作时长（小时）",
+            "present": true
+          },
+          {
+            "label": "当日是否请假",
+            "present": true
+          },
+          {
+            "label": "请假时段",
+            "present": true
+          },
+          {
+            "label": "上班打卡时间",
+            "present": false
+          },
+          {
+            "label": "上班打卡地点",
+            "present": true
+          },
+          {
+            "label": "上班打卡结果",
+            "present": true
+          },
+          {
+            "label": "下班打卡时间",
+            "present": false
+          }
+        ]
+      },
+      "changes": [],
+      "maxSeverity": "info"
+    },
+    {
+      "route": "attendance-period",
+      "name": "周月统计",
+      "status": "ok",
+      "title": "今日水印相机",
+      "currentUrl": "https://www.5181688.com/attendance/period",
+      "textLength": 3075,
+      "requestCount": 90,
+      "normalizedTextHash": "7cd512802f35c930",
+      "expectedSignalCount": 17,
+      "missingExpectedSignals": [
+        {
+          "group": "filters",
+          "label": "筛选时间"
+        },
+        {
+          "group": "tableColumns",
+          "label": "工时长合计"
+        }
+      ],
+      "presence": {
+        "stableControls": [
+          {
+            "label": "下载记录",
+            "present": true
+          },
+          {
+            "label": "下载表格Excel",
+            "present": true
+          }
+        ],
+        "filters": [
+          {
+            "label": "筛选时间",
+            "present": false
+          },
+          {
+            "label": "筛选成员",
+            "present": true
+          }
+        ],
+        "tableColumns": [
+          {
+            "label": "姓名",
+            "present": true
+          },
+          {
+            "label": "考勤规则",
+            "present": true
+          },
+          {
+            "label": "总拍照张数",
+            "present": true
+          },
+          {
+            "label": "出勤天数",
+            "present": true
+          },
+          {
+            "label": "未出勤天数",
+            "present": true
+          },
+          {
+            "label": "工时长合计",
+            "present": false
+          },
+          {
+            "label": "迟到（次）",
+            "present": true
+          },
+          {
+            "label": "早退（次）",
+            "present": true
+          },
+          {
+            "label": "缺卡（次）",
+            "present": true
+          },
+          {
+            "label": "工时异常（次）",
+            "present": true
+          },
+          {
+            "label": "请假天数",
+            "present": true
+          },
+          {
+            "label": "请假时长",
+            "present": true
+          },
+          {
+            "label": "更多",
+            "present": true
+          }
+        ]
+      },
+      "changes": [],
+      "maxSeverity": "info"
+    },
+    {
+      "route": "attendance-ruleset",
+      "name": "考勤规则设置",
+      "status": "ok",
+      "title": "今日水印相机",
+      "currentUrl": "https://www.5181688.com/attendance/ruleset",
+      "textLength": 240,
+      "requestCount": 68,
+      "normalizedTextHash": "e0141f479ea44fa3",
+      "expectedSignalCount": 6,
+      "missingExpectedSignals": [
+        {
+          "group": "highValueSignals",
+          "label": "电脑端考勤上线"
+        },
+        {
+          "group": "highValueSignals",
+          "label": "考勤规则表单"
+        },
+        {
+          "group": "highValueSignals",
+          "label": "班次"
+        },
+        {
+          "group": "highValueSignals",
+          "label": "打卡地点"
+        },
+        {
+          "group": "highValueSignals",
+          "label": "外勤"
+        },
+        {
+          "group": "highValueSignals",
+          "label": "排班"
+        }
+      ],
+      "presence": {
+        "highValueSignals": [
+          {
+            "label": "电脑端考勤上线",
+            "present": false
+          },
+          {
+            "label": "考勤规则表单",
+            "present": false
+          },
+          {
+            "label": "班次",
+            "present": false
+          },
+          {
+            "label": "打卡地点",
+            "present": false
+          },
+          {
+            "label": "外勤",
+            "present": false
+          },
+          {
+            "label": "排班",
+            "present": false
+          }
+        ]
+      },
+      "changes": [],
+      "maxSeverity": "info"
+    },
+    {
+      "route": "visit-record",
+      "name": "拜访记录",
+      "status": "ok",
+      "title": "今日水印相机",
+      "currentUrl": "https://www.5181688.com/visit/record",
+      "textLength": 686,
+      "requestCount": 72,
+      "normalizedTextHash": "063569cea838b796",
+      "expectedSignalCount": 11,
+      "missingExpectedSignals": [
+        {
+          "group": "stableControls",
+          "label": "重置"
+        },
+        {
+          "group": "filters",
+          "label": "筛选时间"
+        }
+      ],
+      "presence": {
+        "stableControls": [
+          {
+            "label": "下载表格Excel",
+            "present": true
+          },
+          {
+            "label": "下载记录",
+            "present": true
+          },
+          {
+            "label": "开始筛选",
+            "present": true
+          },
+          {
+            "label": "重置",
+            "present": false
+          }
+        ],
+        "filters": [
+          {
+            "label": "筛选时间",
+            "present": false
+          },
+          {
+            "label": "筛选拜访人",
+            "present": true
+          },
+          {
+            "label": "筛选水印",
+            "present": true
+          }
+        ],
+        "options": [
+          {
+            "label": "导出Excel包含图片",
+            "present": true
+          }
+        ],
+        "highValueSignals": [
+          {
+            "label": "客户拜访记录",
+            "present": true
+          },
+          {
+            "label": "导出Excel包含图片",
+            "present": true
+          },
+          {
+            "label": "下载记录",
+            "present": true
+          }
+        ]
+      },
+      "changes": [],
+      "maxSeverity": "info"
+    },
+    {
+      "route": "customer-info",
+      "name": "客户信息",
+      "status": "ok",
+      "title": "今日水印相机",
+      "currentUrl": "https://www.5181688.com/customer/info",
+      "textLength": 794,
+      "requestCount": 72,
+      "normalizedTextHash": "38db25aebdf43449",
+      "expectedSignalCount": 23,
+      "missingExpectedSignals": [
+        {
+          "group": "stableControls",
+          "label": "重置"
+        },
+        {
+          "group": "tableColumns",
+          "label": "创建时间"
+        }
+      ],
+      "presence": {
+        "stableControls": [
+          {
+            "label": "批量新增",
+            "present": true
+          },
+          {
+            "label": "批量删除",
+            "present": true
+          },
+          {
+            "label": "批量导出",
+            "present": true
+          },
+          {
+            "label": "下载记录",
+            "present": true
+          },
+          {
+            "label": "开始筛选",
+            "present": true
+          },
+          {
+            "label": "重置",
+            "present": false
+          }
+        ],
+        "filters": [
+          {
+            "label": "筛选跟进人",
+            "present": true
+          },
+          {
+            "label": "筛选内容",
+            "present": true
+          }
+        ],
+        "tableColumns": [
+          {
+            "label": "序号",
+            "present": true
+          },
+          {
+            "label": "客户ID",
+            "present": true
+          },
+          {
+            "label": "客户名称",
+            "present": true
+          },
+          {
+            "label": "客户地址",
+            "present": true
+          },
+          {
+            "label": "门店照片",
+            "present": true
+          },
+          {
+            "label": "联系人",
+            "present": true
+          },
+          {
+            "label": "联系电话",
+            "present": true
+          },
+          {
+            "label": "客户级别",
+            "present": true
+          },
+          {
+            "label": "是否合作",
+            "present": true
+          },
+          {
+            "label": "线路编排",
+            "present": true
+          },
+          {
+            "label": "创建时间",
+            "present": false
+          },
+          {
+            "label": "跟进人及电话",
+            "present": true
+          },
+          {
+            "label": "上次拜访",
+            "present": true
+          },
+          {
+            "label": "详情",
+            "present": true
+          }
+        ],
+        "rowActions": [
+          {
+            "label": "编辑",
+            "present": true
+          }
+        ]
+      },
+      "changes": [],
+      "maxSeverity": "info"
+    },
+    {
+      "route": "user-manual",
+      "name": "使用手册",
+      "status": "ok",
+      "title": "今日水印相机",
+      "currentUrl": "https://www.5181688.com/userManual",
+      "textLength": 222,
+      "requestCount": 132,
+      "normalizedTextHash": "9d8265a5052d8861",
+      "expectedSignalCount": 1,
+      "missingExpectedSignals": [],
+      "presence": {
+        "highValueSignals": [
+          {
+            "label": "使用手册",
+            "present": true
+          }
+        ]
+      },
+      "changes": [],
+      "maxSeverity": "info"
+    },
+    {
+      "route": "qa",
+      "name": "联系客服",
+      "status": "ok",
+      "title": "今日水印相机",
+      "currentUrl": "https://www.5181688.com/qa",
+      "textLength": 801,
+      "requestCount": 69,
+      "normalizedTextHash": "f31726812cc413f5",
+      "expectedSignalCount": 6,
+      "missingExpectedSignals": [],
+      "presence": {
+        "stableControls": [
+          {
+            "label": "联系客服",
+            "present": true
+          }
+        ],
+        "sections": [
+          {
+            "label": "客服电话",
+            "present": true
+          },
+          {
+            "label": "问题解答",
+            "present": true
+          }
+        ],
+        "highValueSignals": [
+          {
+            "label": "客服电话",
+            "present": true
+          },
+          {
+            "label": "问题解答",
+            "present": true
+          },
+          {
+            "label": "在线客服",
+            "present": true
+          }
+        ]
+      },
+      "changes": [],
+      "maxSeverity": "info"
+    },
+    {
+      "route": "photo-albums",
+      "name": "分类照片旧版",
+      "status": "ok",
+      "title": "今日水印相机",
+      "currentUrl": "https://www.5181688.com/photo/albums",
+      "textLength": 418,
+      "requestCount": 74,
+      "normalizedTextHash": "e1360ded1d0ed2fe",
+      "expectedSignalCount": 17,
+      "missingExpectedSignals": [
+        {
+          "group": "highValueSignals",
+          "label": "新建文件夹规则"
+        }
+      ],
+      "presence": {
+        "stableControls": [
+          {
+            "label": "下载记录",
+            "present": true
+          },
+          {
+            "label": "文件夹",
+            "present": true
+          },
+          {
+            "label": "编辑",
+            "present": true
+          },
+          {
+            "label": "下载",
+            "present": true
+          },
+          {
+            "label": "删除",
+            "present": true
+          }
+        ],
+        "sections": [
+          {
+            "label": "系统文件夹",
+            "present": true
+          },
+          {
+            "label": "自建文件夹",
+            "present": true
+          }
+        ],
+        "tableColumns": [
+          {
+            "label": "名称",
+            "present": true
+          },
+          {
+            "label": "创建人",
+            "present": true
+          },
+          {
+            "label": "操作",
+            "present": true
+          }
+        ],
+        "rowActions": [
+          {
+            "label": "编辑",
+            "present": true
+          },
+          {
+            "label": "下载",
+            "present": true
+          },
+          {
+            "label": "删除",
+            "present": true
+          }
+        ],
+        "highValueSignals": [
+          {
+            "label": "分类照片旧版",
+            "present": true
+          },
+          {
+            "label": "水印分类",
+            "present": true
+          },
+          {
+            "label": "收藏的照片",
+            "present": true
+          },
+          {
+            "label": "新建文件夹规则",
+            "present": false
+          }
+        ]
+      },
+      "changes": [],
+      "maxSeverity": "info"
+    }
+  ]
+}

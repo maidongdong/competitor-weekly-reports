@@ -1,0 +1,322 @@
+{
+  "app": "今日水印相机",
+  "package": "com.xhey.xcamera",
+  "oldVersion": "v3.0.360.6",
+  "newVersion": "v3.0.360.10",
+  "oldDate": "2026/04/19 14:40",
+  "newDate": "2026/04/23 live page",
+  "generatedAt": "2026-04-23",
+  "summaryText": "本次 v3.0.360.6 到 v3.0.360.10 是小步版本：没有新增权限、Activity 或 URL，主要变化集中在工作组桌面组件的卡片背景、深浅色资源和文案色值；需要用真机桌面组件验证运行态展示。",
+  "summary": {
+    "features": 1,
+    "uiChanges": 2,
+    "infraChanges": 3,
+    "resourceStringsAdded": 78,
+    "eventsAdded": 5,
+    "apisAdded": 2,
+    "imagesAdded": 0,
+    "imagesRemoved": 1,
+    "apkOldSize": "197.35MB",
+    "apkNewSize": "197.36MB"
+  },
+  "features": [
+    {
+      "id": "workgroup-desktop-widget-visual-refresh",
+      "title": "工作组桌面组件视觉样式调整",
+      "type": "UI 改版",
+      "confidence": "中",
+      "impact": "桌面组件卡片背景、明暗色值和文案颜色有静态资源变化，可能影响工作组入口的桌面展示一致性。",
+      "pages": [
+        "工作组桌面组件",
+        "App Widget",
+        "团队同步入口"
+      ],
+      "evidence": [
+        "workgroup_desktop_widget_dark_bg",
+        "workgroup_desktop_widget_light_bg_end",
+        "workgroup_desktop_widget_link_text",
+        "workgroup_desktop_widget_primary_text",
+        "workgroup_desktop_widget_subtitle_text",
+        "color/workgroup_desktop_widget_dark_bg",
+        "color/workgroup_desktop_widget_light_bg_end",
+        "color/workgroup_desktop_widget_link_text",
+        "color/workgroup_desktop_widget_primary_text",
+        "color/workgroup_desktop_widget_subtitle_text",
+        "res/drawable-night/bg_group_desktop_widget_card.xml",
+        "res/drawable-night/bg_group_desktop_widget_card_colorful.xml",
+        "res/drawable/bg_group_desktop_widget_card_colorful.xml",
+        "res/drawable-xxhdpi/image_app_widget_preview.png",
+        "res/drawable/bg_group_desktop_widget_card.xml",
+        "res/xml-v31/work_group_desktop_widget_info.xml",
+        "res/xml/work_group_desktop_widget_info.xml",
+        "res/U_j.png",
+        "res/6sb.png"
+      ],
+      "summary": [
+        "新增 5 个 `workgroup_desktop_widget_*` 色值/资源 key，集中在桌面组件背景和文案颜色。",
+        "`layout_group_desktop_widget` 与 `layout-v22/layout_group_desktop_widget` 均发生属性级变化，关联类映射到 `WorkGroupDesktopWidget`。",
+        "旧版 `bg_group_desktop_widget_card_colorful.png` 被移除，新版改为 drawable XML；另有 widget preview 图片变化。",
+        "建议在真机桌面添加工作组组件，分别验证浅色/深色模式、团队同步开启态和点击跳转链路。"
+      ],
+      "ui": [
+        "layout_group_desktop_widget",
+        "work_group_desktop_widget_info",
+        "bg_group_desktop_widget_card_colorful"
+      ]
+    }
+  ],
+  "infra": [
+    {
+      "title": "PreviewSettingDrawerCoordinator 小幅重构",
+      "type": "代码结构",
+      "confidence": "低",
+      "summary": "新增两个 `obtainDrawer` 内部类线索、移除一个旧内部类；未伴随明确页面新增，倾向实现重构或局部状态处理调整。",
+      "evidence": [
+        "/xhey/xcamera/ui/setting/PreviewSettingDrawerCoordinator$obtainDrawer$2;",
+        "/xhey/xcamera/ui/setting/PreviewSettingDrawerCoordinator$obtainDrawer$drawer$1;",
+        "/xhey/xcamera/ui/setting/PreviewSettingDrawerCoordinator$obtainDrawer$1;"
+      ]
+    },
+    {
+      "title": "Native/加固文件重签和微调",
+      "type": "包体/Native",
+      "confidence": "低",
+      "summary": "native 库集合无新增删除，但 6 个 native/加固相关文件变更；需要运行态验证是否只是构建产物差异。",
+      "evidence": [
+        "META-INF/com.android.tools.metadata/drm/com.google.play/metadata.bin",
+        "META-INF/com.android.tools.metadata/drm/com.oppo.market/metadata.bin",
+        "META-INF/com.android.tools.metadata/xiaomi/mi.com/metadata.bin",
+        "lib/armeabi-v7a/libshell-supervbasic.com.xhey.xcamera.so",
+        "lib/armeabi-v7a/libshell-superv.com.xhey.xcamera.so",
+        "lib/arm64-v8a/libshell-supervbasic.com.xhey.xcamera.so",
+        "lib/arm64-v8a/libshell-superv.com.xhey.xcamera.so",
+        "META-INF/com.android.tools.metadata/drm/com.google.play/metadata.bin",
+        "META-INF/com.android.tools.metadata/drm/com.oppo.market/metadata.bin",
+        "META-INF/com.android.tools.metadata/xiaomi/mi.com/metadata.bin",
+        "lib/arm64-v8a/libnnpackage-3a4dab6.so",
+        "lib/armeabi-v7a/libnnpackage-3a4dab6.so",
+        "AndroidManifest.xml",
+        "res/6sb.png",
+        "res/9TF.xml",
+        "res/S9P.xml",
+        "res/Stx.xml",
+        "res/Uo8.xml"
+      ]
+    },
+    {
+      "title": "Manifest 对外能力未扩张",
+      "type": "权限/组件",
+      "confidence": "高",
+      "summary": "权限、Activity 数量未变化，未发现新增 URL；本次更像资源和局部实现迭代。",
+      "evidence": [
+        "permissions_added=0",
+        "permissions_removed=0",
+        "activities_added=0",
+        "activities_removed=0",
+        "urls_added=0"
+      ]
+    }
+  ],
+  "pmInsights": [
+    "优先验证工作组桌面组件：浅色/深色背景、同步团队提示、点击跳转。",
+    "本次未看到新功能入口扩张，更像组件视觉/资源修正。",
+    "静态证据无法覆盖灰度配置、账号态和系统桌面渲染差异。"
+  ],
+  "coverage": {
+    "decompilation": {
+      "apktool": "ok",
+      "jadx_old": "ok",
+      "jadx_new": "ok"
+    },
+    "layoutCoverage": {
+      "layoutsAdded": 0,
+      "layoutsRemoved": 0,
+      "layoutsChanged": 2,
+      "resourceValuesAdded": 5,
+      "resourceValuesRemoved": 0,
+      "resourceValuesChanged": 38,
+      "resourceFilesAdded": 3,
+      "resourceFilesRemoved": 1,
+      "resourceFilesChanged": 4,
+      "categories": {
+        "工作组/桌面组件": 2
+      },
+      "mappingOldStatus": "ok",
+      "mappingNewStatus": "ok",
+      "mappingNewClasses": 2571,
+      "mappingNewLayoutLinks": 2100
+    },
+    "unexplainedSignals": {
+      "agc_or_obfuscated_strings_added": 73,
+      "resource_strings_removed": 71,
+      "native_changed_files": 6
+    },
+    "blindSpots": [
+      "灰度开关",
+      "服务端配置",
+      "WebView/H5",
+      "加密字符串",
+      "桌面 Launcher 兼容性",
+      "运行账号状态"
+    ]
+  },
+  "obfuscation": {
+    "impact": "中",
+    "summary": "大量新增/删除字符串呈 hash/加密形态，类名也有内部匿名类变化；PM 结论主要依赖 layout/resource key 与资源文件名，不依赖短类名。",
+    "candidateSemanticAliases": [
+      {
+        "alias": "WorkGroupDesktopWidgetColorRefreshCandidate",
+        "evidence": [
+          "layout_group_desktop_widget",
+          "workgroup_desktop_widget_dark_bg",
+          "bg_group_desktop_widget_card_colorful"
+        ]
+      },
+      {
+        "alias": "PreviewSettingDrawerRefactorCandidate",
+        "evidence": [
+          "/xhey/xcamera/ui/setting/PreviewSettingDrawerCoordinator$obtainDrawer$2;",
+          "/xhey/xcamera/ui/setting/PreviewSettingDrawerCoordinator$obtainDrawer$drawer$1;",
+          "/xhey/xcamera/ui/setting/PreviewSettingDrawerCoordinator$obtainDrawer$1;"
+        ]
+      }
+    ]
+  },
+  "raw": {
+    "counts": {
+      "files_added": 3,
+      "files_removed": 1,
+      "files_changed": 46,
+      "resource_strings_added": 78,
+      "resource_strings_removed": 71,
+      "dex_strings_added": 12,
+      "dex_strings_removed": 5,
+      "apis_added": 2,
+      "apis_removed": 1,
+      "events_added": 5,
+      "events_removed": 0,
+      "urls_added": 0,
+      "urls_removed": 0,
+      "layouts_changed": 2,
+      "resource_files_added": 3,
+      "resource_files_removed": 1,
+      "resource_files_changed": 4,
+      "static_previews": 1
+    },
+    "manifest": {
+      "permissions_added": [],
+      "permissions_removed": [],
+      "activities_added": [],
+      "activities_removed": []
+    },
+    "images": {
+      "added_count": 0,
+      "removed_count": 1,
+      "changed_count": 1,
+      "added_sample": [],
+      "removed_sample": [
+        {
+          "path": "res/U_j.png",
+          "format": "png",
+          "size": [
+            447,
+            447
+          ]
+        }
+      ],
+      "changed_sample": [
+        {
+          "path": "res/6sb.png",
+          "format": "png",
+          "size": [
+            447,
+            447
+          ]
+        }
+      ]
+    },
+    "urlsAdded": [],
+    "urlsRemoved": [],
+    "domainsAdded": [
+      "gmg.xml",
+      "hld.xml"
+    ],
+    "domainsRemoved": [],
+    "files": {
+      "added_count": 3,
+      "removed_count": 1,
+      "changed_count": 46,
+      "added_summary": {
+        "res": 3
+      },
+      "removed_summary": {
+        "res": 1
+      },
+      "changed_summary": {
+        "dex": 14,
+        "res": 13,
+        "meta_inf": 6,
+        "native_lib": 6,
+        "assets": 5,
+        "AndroidManifest.xml": 1,
+        "resources.arsc": 1
+      },
+      "added": [
+        "res/HLd.xml",
+        "res/cT_.xml",
+        "res/gmg.xml"
+      ],
+      "removed": [
+        "res/U_j.png"
+      ],
+      "changed": [
+        "META-INF/com.android.tools.metadata/drm/com.google.play/metadata.bin",
+        "META-INF/com.android.tools.metadata/drm/com.oppo.market/metadata.bin",
+        "META-INF/com.android.tools.metadata/xiaomi/mi.com/metadata.bin",
+        "lib/arm64-v8a/libnnpackage-3a4dab6.so",
+        "lib/armeabi-v7a/libnnpackage-3a4dab6.so",
+        "AndroidManifest.xml",
+        "res/6sb.png",
+        "res/9TF.xml",
+        "res/S9P.xml",
+        "res/Stx.xml",
+        "res/Uo8.xml",
+        "res/_ae.xml",
+        "res/fI3.xml",
+        "res/fhy.xml",
+        "res/h4H.xml",
+        "res/lAP.xml",
+        "res/nvr.xml",
+        "res/reh.xml",
+        "res/tE2.xml",
+        "resources.arsc",
+        "lib/armeabi-v7a/libshell-supervbasic.com.xhey.xcamera.so",
+        "lib/armeabi-v7a/libshell-superv.com.xhey.xcamera.so",
+        "lib/arm64-v8a/libshell-supervbasic.com.xhey.xcamera.so",
+        "lib/arm64-v8a/libshell-superv.com.xhey.xcamera.so",
+        "classes.dex",
+        "classes2.dex",
+        "classes3.dex",
+        "classes4.dex",
+        "classes5.dex",
+        "classes6.dex",
+        "classes7.dex",
+        "classes8.dex",
+        "classes9.dex",
+        "classes10.dex",
+        "classes11.dex",
+        "classes12.dex",
+        "classes13.dex",
+        "classes14.dex",
+        "assets/tosversion",
+        "assets/o0oooOO0ooOo.dat",
+        "assets/dexMethod_00oo1l1l.dat",
+        "assets/0OO00oo01l1l",
+        "assets/0OO00oo11l1l",
+        "META-INF/ANDROID.SF",
+        "META-INF/ANDROID.RSA",
+        "META-INF/MANIFEST.MF"
+      ]
+    }
+  }
+}

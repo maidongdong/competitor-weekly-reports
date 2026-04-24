@@ -1,0 +1,1 @@
+PDF export requires Google Chrome/Chromium or Python Playwright. Install one of them, then run: python3 export_report_pdf.py <report_dir>\n

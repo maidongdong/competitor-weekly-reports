@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>今日水印相机竞品周报 20260424</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <aside class="rail">
+    <div class="brand">竞品周报</div>
+    <a href="#summary">本期</a>
+    <a href="#app">App</a>
+    <a href="#web">Web</a>
+    <a href="#validation">验证项</a>
+    <a href="../jinri-watermark-camera-3.0.360.6-to-3.0.360.10-20260423/index.html">APK 详情</a>
+    <a href="../web-admin-monitor-20260424/index.html">Web 详情</a>
+  </aside>
+  <main>
+    <header id="summary" class="header">
+      <div>
+        <h1>今日水印相机竞品周报 20260424</h1>
+        <p>2026-04-24T03:19:38.349Z · 今日水印相机</p>
+      </div>
+      <div class="chips">
+        <span>APK v3.0.360.10</span>
+        <span>Web 30/30 正常</span>
+        <span>验证 2 项</span>
+      </div>
+    </header>
+
+    <section class="metrics">
+      <div><strong>v3.0.360.6 → v3.0.360.10</strong><span>APK 版本</span></div>
+      <div><strong>低-中</strong><span>App 变化级别</span></div>
+      <div><strong>0</strong><span>Web 功能变化</span></div>
+      <div><strong>0</strong><span>Web 异常页</span></div>
+    </section>
+
+    <section class="panel">
+      <h2>PM 结论</h2>
+      <ol><li>本次 v3.0.360.6 到 v3.0.360.10 是小步版本：没有新增权限、Activity 或 URL，主要变化集中在工作组桌面组件的卡片背景、深浅色资源和文案色值；需要用真机桌面组件验证运行态展示。</li><li>未发现相对上一基线的页面结构变化，登录态和主要入口均保持稳定。</li><li>优先验证工作组桌面组件：浅色/深色背景、同步团队提示、点击跳转。</li><li>本次未看到新功能入口扩张，更像组件视觉/资源修正。</li></ol>
+    </section>
+
+    <section id="app" class="split">
+      <div class="panel">
+        <div class="section-head">
+          <h2>App 端 APK</h2>
+          <a class="button" href="../jinri-watermark-camera-3.0.360.6-to-3.0.360.10-20260423/index.html">打开详情</a>
+        </div>
+        <p>本次 v3.0.360.6 到 v3.0.360.10 是小步版本：没有新增权限、Activity 或 URL，主要变化集中在工作组桌面组件的卡片背景、深浅色资源和文案色值；需要用真机桌面组件验证运行态展示。</p>
+        <article class="card">
+        <div class="card-head">
+          <div>
+            <h3>工作组桌面组件视觉样式调整</h3>
+            <p>UI 改版 · 置信度 中</p>
+          </div>
+          <span class="badge warn">App</span>
+        </div>
+        <p>桌面组件卡片背景、明暗色值和文案颜色有静态资源变化，可能影响工作组入口的桌面展示一致性。</p>
+        <div class="badges"><span>workgroup_desktop_widget_dark_bg</span><span>workgroup_desktop_widget_light_bg_end</span><span>workgroup_desktop_widget_link_text</span><span>workgroup_desktop_widget_primary_text</span><span>workgroup_desktop_widget_subtitle_text</span><span>color/workgroup_desktop_widget_dark_bg</span></div>
+      </article>
+      </div>
+      <div id="web" class="panel">
+        <div class="section-head">
+          <h2>Web/admin</h2>
+          <a class="button" href="../web-admin-monitor-20260424/index.html">打开详情</a>
+        </div>
+        <p>未发现相对上一基线的页面结构变化，登录态和主要入口均保持稳定。</p>
+        <article class="card muted-card"><h3>Web 管理后台无功能变化</h3><p>30 个菜单页均为 ok，未发现菜单、按钮、筛选项、表格列或页面状态变化。</p></article>
+      </div>
+    </section>
+
+    <section id="validation" class="panel">
+      <h2>人工验证清单</h2>
+      <table>
+        <thead><tr><th>优先级</th><th>端</th><th>模块</th><th>建议验证</th><th>证据</th></tr></thead>
+        <tbody><tr>
+        <td><span class="priority medium">中</span></td>
+        <td>App</td>
+        <td>工作组桌面组件</td>
+        <td>建议在真机桌面添加工作组组件，分别验证浅色/深色模式、团队同步开启态和点击跳转链路。</td>
+        <td><span class="mini">layout</span><span class="mini">resource</span><span class="mini">confidence:中</span></td>
+      </tr><tr>
+        <td><span class="priority low">低</span></td>
+        <td>Web</td>
+        <td>管理后台</td>
+        <td>30 个菜单页均正常，暂无功能入口变化；下次出现入口变化再进入验证。</td>
+        <td><span class="mini">route</span><span class="mini">menu</span><span class="mini">status</span></td>
+      </tr></tbody>
+      </table>
+    </section>
+
+    <section class="panel">
+      <h2>覆盖与限制</h2>
+      <p>App 端基于 APK 静态分析、apktool/jadx、资源和布局重建；Web 端基于真实浏览器登录态采集后的脱敏结构对比。Web 原始快照可能含成员、客户、照片和地点数据，不在总入口展示。</p>
+      <p>APK 盲区：灰度开关、服务端配置、WebView/H5、加密字符串、桌面 Launcher 兼容性、运行账号状态。Web 未解释变化池：0。</p>
+    </section>
+  </main>
+</body>
+</html>
