@@ -1,0 +1,174 @@
+{
+  "title": "今日水印相机竞品周报 20260427",
+  "generatedAt": "2026-04-27T01:44:04.371Z",
+  "links": {
+    "apk": "../jinri-watermark-camera-3.0.360.6-to-3.0.360.10-20260423/index.html",
+    "web": "../web-admin-monitor-20260427/index.html"
+  },
+  "apk": {
+    "oldVersion": "v3.0.360.6",
+    "newVersion": "v3.0.360.10",
+    "severity": "低-中",
+    "summaryText": "本次 v3.0.360.6 到 v3.0.360.10 是小步版本：没有新增权限、Activity 或 URL，主要变化集中在工作组桌面组件的卡片背景、深浅色资源和文案色值；需要用真机桌面组件验证运行态展示。",
+    "pmInsights": [
+      "优先验证工作组桌面组件：浅色/深色背景、同步团队提示、点击跳转。",
+      "本次未看到新功能入口扩张，更像组件视觉/资源修正。",
+      "静态证据无法覆盖灰度配置、账号态和系统桌面渲染差异。"
+    ],
+    "features": [
+      {
+        "id": "workgroup-desktop-widget-visual-refresh",
+        "title": "工作组桌面组件视觉样式调整",
+        "type": "UI 改版",
+        "confidence": "中",
+        "impact": "桌面组件卡片背景、明暗色值和文案颜色有静态资源变化，可能影响工作组入口的桌面展示一致性。",
+        "pages": [
+          "工作组桌面组件",
+          "App Widget",
+          "团队同步入口"
+        ],
+        "evidence": [
+          "workgroup_desktop_widget_dark_bg",
+          "workgroup_desktop_widget_light_bg_end",
+          "workgroup_desktop_widget_link_text",
+          "workgroup_desktop_widget_primary_text",
+          "workgroup_desktop_widget_subtitle_text",
+          "color/workgroup_desktop_widget_dark_bg",
+          "color/workgroup_desktop_widget_light_bg_end",
+          "color/workgroup_desktop_widget_link_text",
+          "color/workgroup_desktop_widget_primary_text",
+          "color/workgroup_desktop_widget_subtitle_text",
+          "res/drawable-night/bg_group_desktop_widget_card.xml",
+          "res/drawable-night/bg_group_desktop_widget_card_colorful.xml",
+          "res/drawable/bg_group_desktop_widget_card_colorful.xml",
+          "res/drawable-xxhdpi/image_app_widget_preview.png",
+          "res/drawable/bg_group_desktop_widget_card.xml",
+          "res/xml-v31/work_group_desktop_widget_info.xml",
+          "res/xml/work_group_desktop_widget_info.xml",
+          "res/U_j.png",
+          "res/6sb.png"
+        ],
+        "summary": [
+          "新增 5 个 `workgroup_desktop_widget_*` 色值/资源 key，集中在桌面组件背景和文案颜色。",
+          "`layout_group_desktop_widget` 与 `layout-v22/layout_group_desktop_widget` 均发生属性级变化，关联类映射到 `WorkGroupDesktopWidget`。",
+          "旧版 `bg_group_desktop_widget_card_colorful.png` 被移除，新版改为 drawable XML；另有 widget preview 图片变化。",
+          "建议在真机桌面添加工作组组件，分别验证浅色/深色模式、团队同步开启态和点击跳转链路。"
+        ],
+        "ui": [
+          "layout_group_desktop_widget",
+          "work_group_desktop_widget_info",
+          "bg_group_desktop_widget_card_colorful"
+        ]
+      }
+    ],
+    "blindSpots": [
+      "灰度开关",
+      "服务端配置",
+      "WebView/H5",
+      "加密字符串",
+      "桌面 Launcher 兼容性",
+      "运行账号状态"
+    ],
+    "coverage": {
+      "decompilation": {
+        "apktool": "ok",
+        "jadx_old": "ok",
+        "jadx_new": "ok"
+      },
+      "layoutCoverage": {
+        "layoutsAdded": 0,
+        "layoutsRemoved": 0,
+        "layoutsChanged": 2,
+        "resourceValuesAdded": 5,
+        "resourceValuesRemoved": 0,
+        "resourceValuesChanged": 38,
+        "resourceFilesAdded": 3,
+        "resourceFilesRemoved": 1,
+        "resourceFilesChanged": 4,
+        "categories": {
+          "工作组/桌面组件": 2
+        },
+        "mappingOldStatus": "ok",
+        "mappingNewStatus": "ok",
+        "mappingNewClasses": 2571,
+        "mappingNewLayoutLinks": 2100
+      },
+      "unexplainedSignals": {
+        "agc_or_obfuscated_strings_added": 73,
+        "resource_strings_removed": 71,
+        "native_changed_files": 6
+      },
+      "blindSpots": [
+        "灰度开关",
+        "服务端配置",
+        "WebView/H5",
+        "加密字符串",
+        "桌面 Launcher 兼容性",
+        "运行账号状态"
+      ]
+    },
+    "obfuscation": {
+      "impact": "中",
+      "summary": "大量新增/删除字符串呈 hash/加密形态，类名也有内部匿名类变化；PM 结论主要依赖 layout/resource key 与资源文件名，不依赖短类名。",
+      "candidateSemanticAliases": [
+        {
+          "alias": "WorkGroupDesktopWidgetColorRefreshCandidate",
+          "evidence": [
+            "layout_group_desktop_widget",
+            "workgroup_desktop_widget_dark_bg",
+            "bg_group_desktop_widget_card_colorful"
+          ]
+        },
+        {
+          "alias": "PreviewSettingDrawerRefactorCandidate",
+          "evidence": [
+            "/xhey/xcamera/ui/setting/PreviewSettingDrawerCoordinator$obtainDrawer$2;",
+            "/xhey/xcamera/ui/setting/PreviewSettingDrawerCoordinator$obtainDrawer$drawer$1;",
+            "/xhey/xcamera/ui/setting/PreviewSettingDrawerCoordinator$obtainDrawer$1;"
+          ]
+        }
+      ]
+    }
+  },
+  "web": {
+    "routeCount": 30,
+    "okRoutes": 30,
+    "nonOkRoutes": 0,
+    "changedRoutes": [],
+    "pmSummary": "未发现相对上一基线的页面结构变化，登录态和主要入口均保持稳定。",
+    "unexplainedPool": 0,
+    "statusCounts": {
+      "ok": 30
+    }
+  },
+  "pmInsights": [
+    "本次 v3.0.360.6 到 v3.0.360.10 是小步版本：没有新增权限、Activity 或 URL，主要变化集中在工作组桌面组件的卡片背景、深浅色资源和文案色值；需要用真机桌面组件验证运行态展示。",
+    "未发现相对上一基线的页面结构变化，登录态和主要入口均保持稳定。",
+    "优先验证工作组桌面组件：浅色/深色背景、同步团队提示、点击跳转。",
+    "本次未看到新功能入口扩张，更像组件视觉/资源修正。"
+  ],
+  "validationItems": [
+    {
+      "priority": "中",
+      "side": "App",
+      "module": "工作组桌面组件",
+      "action": "建议在真机桌面添加工作组组件，分别验证浅色/深色模式、团队同步开启态和点击跳转链路。",
+      "evidence": [
+        "layout",
+        "resource",
+        "confidence:中"
+      ]
+    },
+    {
+      "priority": "低",
+      "side": "Web",
+      "module": "管理后台",
+      "action": "30 个菜单页均正常，暂无功能入口变化；下次出现入口变化再进入验证。",
+      "evidence": [
+        "route",
+        "menu",
+        "status"
+      ]
+    }
+  ]
+}
